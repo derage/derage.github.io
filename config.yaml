@@ -1,5 +1,6 @@
-baseURL: https://hugo-toha.github.io
+relativeURLS: true
 # https://toha-guides.netlify.app/posts/getting-started/github-pages/
+# https://steemit.com/ipfs/@steefmin/hugo-and-ipfs
 languageCode: en-us
 title: "Jesse's Blog"
 theme: "toha"
