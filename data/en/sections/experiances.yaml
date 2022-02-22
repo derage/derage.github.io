@@ -1,0 +1,70 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Chewy Inc.
+    url: "https://www.chewy.com"
+    location: Boston Ma
+    # company overview
+    overview: Chewy is a major player in anything Pet related in a digital age!
+  positions:
+  - designation: Senior Devops Engineer
+    start: June 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Work with Pethealth Develop team create and release new products and features for our Vets and Customers. (AWS/Kubernetes)
+    - Lead Release engineering team to build out new automated standards to help devops transaformation within the rest of chewy
+    - R&D new technology to help stabalize and release features faster in a digital age (Gitops/Service mesh)
+- company:
+    name: Massmutual
+    url: https://www.massmutual.com/
+    location: Boston Ma
+    # company overview
+    overview: Massmutual; A life insurance company that does great things in AI modeling
+  positions:
+  - designation: SRE / Devops engineer
+    start: May 2017
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: June 2021
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Learning everything devops. From autohealing, automating, and problem solving
+- company:
+    name: Roamdata / Ingenico
+    url: https://www.ingenico.com/
+    location: Boston Ma
+    # company overview
+    overview: Roamdata was a startup that provide point of sales mobile solutions to restraunts football arenas, and many others
+  positions:
+  - designation: QA Engineer
+    start: May 2015
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: June 2017
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Where I learned the power of Devops, dockerization, and Framework development
+- company:
+    name: Netezza / IBM
+    url: https://www.ibm.com/
+    location: Boston Ma
+    # company overview
+    overview: Netezza; the fastest appliance on the market for bigdata wharehousing
+  positions:
+  - designation: Operations Engineer
+    start: May 2013
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: June 2015
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Operations Engineer Learning the basics on troubleshooting, automating, and softskills
