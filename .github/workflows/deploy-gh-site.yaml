@@ -7,8 +7,13 @@ on:
     - source
 
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 14.17.0 ]
     steps:
     # checkout to the commit that has been pushed
     - uses: actions/checkout@v2
@@ -35,12 +40,14 @@ jobs:
         publish_branch: main # if your main branch is `master` use that here.
         publish_dir: ./public
 
-    - name: Use Node.js 16.x
-      uses: actions/setup-node@v1
+    - name: Use Node.js 14.17.0
+      uses: actions/setup-node@v2
       with:
-        node-version: 16.x
-    - name: Deploy to pinata / cloudflare
-      run:  sudo apt-get install -y xsel && npx ipfs-deploy public -u pinata -d cloudflare
+        node-version: 14.17.0
+    - run: npm install -g ipfs-deploy@10.1.1 --ignore-scripts
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: ipd public/ -p pinata -d cloudflare
       env:
         IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__API_TOKEN }}
         IPFS_DEPLOY_CLOUDFLARE__RECORD: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__RECORD }}
