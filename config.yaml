@@ -1,6 +1,7 @@
 relativeURLS: true
 # https://toha-guides.netlify.app/posts/getting-started/github-pages/
 # https://steemit.com/ipfs/@steefmin/hugo-and-ipfs
+# https://alphasec.io/how-to-host-a-website-on-ipfs-using-pinata-and-cloudflare/
 languageCode: en-us
 title: "Jesse's Blog"
 theme: "toha"

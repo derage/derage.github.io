@@ -1,18 +1,20 @@
 ---
 title: "Introduction"
 date: 2020-06-08T08:06:25+06:00
-description: Creating this website
+description: Creating My first website
 menu:
   sidebar:
-    name: Creating this website
-    identifier: introduction
+    name: Creating My first website
+    identifier: serverless
     weight: 10
-tags: ["Basic", "Multi-lingual"]
+tags: ["Basic"]
 categories: ["Basic"]
 ---
 
 
-## The journey of creating this website
+## The journey of creating My first website
+
+EDIT: this blog below you can find on my old website: https://www.cafarelli.org. Checkout the new post where I use IPFS to make it even cheaper
 
 This website I have started and stopped multiple times. Choosing multiple different technology stacks. Slowly but surly failing to get it started till I landed here. Here was the journey I embarked on, and where I am so far.
 
