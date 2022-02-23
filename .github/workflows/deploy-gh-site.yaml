@@ -40,7 +40,7 @@ jobs:
       with:
         node-version: 16.x
     - name: Deploy to pinata / cloudflare
-      run:  npx ipfs-deploy public -u pinata -d cloudflare
+      run:  sudo apt-get install -y xsel && npx ipfs-deploy public -u pinata -d cloudflare
       env:
         IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__API_TOKEN }}
         IPFS_DEPLOY_CLOUDFLARE__RECORD: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__RECORD }}
