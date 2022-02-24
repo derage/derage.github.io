@@ -11,9 +11,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [ 14.17.0 ]
     steps:
     # checkout to the commit that has been pushed
     - uses: actions/checkout@v2
@@ -40,12 +37,11 @@ jobs:
         publish_branch: main # if your main branch is `master` use that here.
         publish_dir: ./public
 
-    - name: Use Node.js 14.17.0
+    - name: Use Node.js 14.x
       uses: actions/setup-node@v2
       with:
-        node-version: 14.17.0
-    - run: npm install -g ipfs-deploy@10.1.1 --ignore-scripts
-    - run: ipd public/ -p pinata -d cloudflare --no-clipboard
+        node-version: 16.x
+    - run: npx ipfs-deploy public/ -p pinata -d cloudflare --no-clipboard
       env:
         IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__API_TOKEN }}
         IPFS_DEPLOY_CLOUDFLARE__RECORD: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__RECORD }}
