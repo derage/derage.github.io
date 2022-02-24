@@ -45,7 +45,7 @@ jobs:
       with:
         node-version: 14.17.0
     - run: npm install -g ipfs-deploy@10.1.1 --ignore-scripts
-    - run: ipd public/ -p pinata -d cloudflare
+    - run: ipd public/ -p pinata -d cloudflare --no-clipboard
       env:
         IPFS_DEPLOY_CLOUDFLARE__API_TOKEN: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__API_TOKEN }}
         IPFS_DEPLOY_CLOUDFLARE__RECORD: ${{ secrets.IPFS_DEPLOY_CLOUDFLARE__RECORD }}
