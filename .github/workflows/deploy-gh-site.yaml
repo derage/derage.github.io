@@ -27,7 +27,7 @@ jobs:
 
     # build website
     - name: Build
-      run: hugo --minify
+      run: hugo mod npm pack && npm install && hugo --minify
 
     # push the generated content into the `main` (former `master`) branch.
     - name: Deploy
