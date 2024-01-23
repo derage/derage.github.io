@@ -8,17 +8,17 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Devops Engineer
+designation: Staff Devops Engineer
 # your company information
 company:
-  name: Chewy Inc
-  url: "https://www.chewy.com/"
+  name: Alert innovation (Walmart)
+  url: "https://www.walmartasr.com/"
 
 # your resume. this file path should be relative to you "static" directory
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate Devops Engineer. I built tools for [Kubernetes](https://kubernetes.io/) and Jenkins using GO that help people to build, validate and deploy their workloads.'
+summary: 'I am a passionate Devops Engineer. I built tools for [Kubernetes](https://kubernetes.io/) and Gitlab using GO that help people to build, validate and deploy their workloads.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -28,7 +28,7 @@ socialLinks:
   url: "https://github.com/derage"
 - name: Linkedin
   icon: "fab fa-linkedin"
-  url: "https://github.com/derage"
+  url: "https://www.linkedin.com/in/jesse-cafarelli/"
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
