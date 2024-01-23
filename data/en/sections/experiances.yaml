@@ -11,14 +11,30 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Alert Innovation
+    url: "https://www.walmartasr.com/"
+    location: Boston Ma
+    # company overview
+    overview: Robotic autmation in a grocery store
+  positions:
+  - designation: Staff Devops Engineer
+    start: June 2022
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Architecting and building out next generation appliance with Microk8s, MAAS, and custom golang services for auto healing capabilities. 
+    - Mentored a new team of SREs to help support ongoing development within the organization resulting in higher failure rates and higher MTTR
+- company:
     name: Chewy Inc.
     url: "https://www.chewy.com"
     location: Boston Ma
     # company overview
     overview: Chewy is a major player in anything Pet related in a digital age!
   positions:
-  - designation: Senior Devops Engineer
+  - designation: Staff Devops Engineer
     start: June 2021
+    end: June 2022
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
